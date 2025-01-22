@@ -1,7 +1,6 @@
 package com.luazevedo.projetospring.controller;
 
 import com.luazevedo.projetospring.dto.GameDTO;
-import com.luazevedo.projetospring.entities.Game;
 import com.luazevedo.projetospring.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
