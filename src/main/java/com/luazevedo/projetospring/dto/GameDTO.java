@@ -1,6 +1,7 @@
 package com.luazevedo.projetospring.dto;
 
 import com.luazevedo.projetospring.entities.Game;
+import com.luazevedo.projetospring.projections.GameProjection;
 
 public class GameDTO {
 
@@ -18,6 +19,13 @@ public class GameDTO {
         shortDescription = entity.getShortDescription();
         title = entity.getTitle();
         year = entity.getYear();
+    }
+    public GameDTO(GameProjection projection) {
+        id = projection.getId();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
+        title = projection.getTitle();
+        year = projection.getYear();
     }
 
     public Long getId() {
