@@ -25,7 +25,7 @@ public class GameDTO {
         imgUrl = projection.getImgUrl();
         shortDescription = projection.getShortDescription();
         title = projection.getTitle();
-        year = projection.getYear();
+        year = projection.getGameYear();
     }
 
     public Long getId() {
